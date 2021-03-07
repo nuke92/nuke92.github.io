@@ -1,0 +1,42 @@
+.footer{
+    color: $color-gray-dark;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-xsmall) {
+        flex-direction: column;
+
+        & > *:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+
+    padding: 1rem;
+
+    &__mid{
+        text-transform: uppercase;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+    }
+
+    li{
+        margin: 0 1rem;
+        a,
+        a:link,
+        a:visited{
+            text-decoration: none;
+            color: $color-gray-dark;
+        }
+    }
+
+    &__icon{
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: $color-gray-dark;
+    }
+}

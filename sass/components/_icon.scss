@@ -1,0 +1,23 @@
+.icon{  //ikonok
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+
+    &--nav{
+        fill: currentColor;
+    }
+
+    &--content{
+        fill: $color-orange;
+        background-color: $color-white;
+
+        &:hover{
+            fill:$color-gray-dark;
+        }
+
+        &:active{
+            background-color: $color-orange;
+            fill: $color-white;
+        }
+    }
+}

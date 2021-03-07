@@ -1,0 +1,72 @@
+.btn{
+    &--small{   //kicsi gombok a kereső mezőhöz
+        @include btnReset;
+                
+        &:active{
+            background-color: $color-white;
+            color:$color-orange;
+        }
+    }
+    &--large{   //nagy gomb a form elküldéséhez jegyvásárlás felületen
+        font-size: 1.2rem;
+        color: $color-white;
+        font-weight: 500;
+        letter-spacing: .1rem;
+
+        @include btnReset;
+        background-color: $color-orange;
+        box-shadow: $shadow;
+
+        padding: 1.5rem;
+        width: 80%;
+        margin: 1rem auto;
+        transition: all .2s;
+
+        &:active{
+            background-color: $color-maximumRed;
+            box-shadow: $btnShadowActive;
+            transform: translateY(.2rem);
+            transition: all .2s;
+        }
+    }
+
+    &--inline{  //szöveg stílusú gomb az about szekcióhoz
+        @include btnReset;
+        color: $color-jet;
+        border-bottom: .1rem solid currentColor;
+        padding-bottom: .2rem;
+        margin-left: 1rem;
+        display: inline-block;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .2s;
+
+        span{
+            margin-left: .3rem;
+            transition: all .2s;
+            color: $color-jet;
+        }
+
+        &:hover{
+            color: $color-orange;
+
+            span{
+                margin-left: .8rem;
+                color: $color-orange;
+            }
+        }
+    }
+}
+
+.nav__search__btn{
+    fill: $color-white;
+    margin: 0;
+
+    &:active{
+        fill:$color-orange;
+    }
+}
+
+.content__search__btn{
+    background:none;
+}

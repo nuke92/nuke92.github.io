@@ -1,0 +1,35 @@
+//COLORS
+$color-white:           #FCFCFC;
+$color-gray-light:      #F4F5F2;
+$color-gray:            #D4D4D4;
+$color-gray-dark:       #8b8b8b;
+$color-tartOrange:      #FF8928;
+$color-spaceOrange:     #F4551A;
+$color-orange:          #FF473A;
+$color-maximumRed:      #E01A1A;
+$color-jet:             #332F2B;
+$color-black:           #000000;
+
+//BORDERS
+$input-border-white: .2rem solid $color-white;
+$input-border-orange: .2rem solid $color-orange;
+
+$thin-border: .1rem solid $color-gray-light;
+$thick-border: .2rem solid $color-gray-light;
+
+//SHADOWS
+$pageShadow: 0rem 0rem 3rem rgba($color-black, .2);
+$shadow: 0rem .3rem .3rem rgba($color-black, .3);
+$btnShadowActive: 0rem .1rem .2rem rgba($color-black, .5);
+$navShadow: .5rem 0rem .4rem rgba($color-black, .3);
+
+//FONT
+$montserrat: "montserrat", sans-serif;
+
+//BREAKPOINTS   -   em-ben megadva, mert a root betűméretet felülírtam
+$bp-large: 75em;            //1200px
+$bp-medium: 50em;           //800px
+$bp-small: 40.625em;        //650px
+$bp-xsmall: 28.75em;        //460px
+
+$bp-smallHeight: 21.875em;  //350px

@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: $thin-border;
+
+    &__title{
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        max-width: 4rem;
+        order: 1;
+    }
+
+    &__page-name{
+        color:$color-orange;
+        font-size: 1.8rem;
+
+        margin: auto;
+        order:2;
+    }
+
+//HAMBURGER MENU
+    .hamburger{
+        display: none;
+        order: 3;
+
+        @media only screen and (max-width:$bp-medium) {
+            display: block;            
+        }
+
+        &__btn{
+            outline: none;
+            border: none;
+            background: none;
+            
+            height: 3rem;
+            width: 3rem;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        &__icon{
+            margin-top: 1.5rem;
+            position: relative;
+
+            &,
+            &::before,
+            &::after{
+                width: 2rem;
+                height: 2px;
+                background-color: $color-black;
+                display: inline-block;
+            }
+
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                backface-visibility: hidden;
+                transition: all .1s;
+            }
+
+            &::before{ top: -.6rem;}
+
+            &::after{ top: .6rem;}
+        }
+
+        //hamburger X gombbá alakítása
+        &__show{
+            .hamburger__icon{
+                background-color: transparent;
+            }
+
+            .hamburger__icon::before{
+                top: 0;
+                transform: rotate(135deg);
+            }
+
+            .hamburger__icon::after{
+                top: 0;
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}

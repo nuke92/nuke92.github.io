@@ -1,0 +1,33 @@
+@mixin numberToTextAppearence {
+    input[type="number"] {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+      }
+      
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
+}
+
+@mixin numberFieldStyle {
+    input{
+        border: none;
+        outline: none;
+        background-color: $color-white;
+        max-width: 3rem;
+        height: 3rem;
+
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-gray;
+    }
+}
+
+@mixin btnReset {
+    background: none;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,14 @@
+.content__head{
+    &__title{
+        max-width: 25rem;
+        margin: 2rem 0;
+
+        h2{
+            font-size: 2rem;
+        }
+
+        p{
+            color: #FF473A;
+        }
+    }
+}

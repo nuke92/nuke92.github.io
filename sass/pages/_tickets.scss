@@ -1,0 +1,118 @@
+.date{
+    margin-bottom: 2rem;
+    
+    &__days{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: .2rem solid $color-gray-light;
+        margin-bottom: 1rem;
+
+        h3{
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $color-gray;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover{
+                color: $color-black;
+                margin-bottom: .5rem;
+                transition: all .2s;
+            }
+        }
+        .active{
+            border-bottom: .3rem solid $color-orange;
+            margin-bottom: -.2rem;
+                h3{
+                    color: $color-black;
+                    margin-bottom: .5rem;
+                }
+        }
+    }
+
+    &__details{
+        text-align: center;
+    }
+}
+
+
+.ticket{
+    display: flex;
+    flex-direction: column;
+
+    &__group{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 1rem;
+        
+        &:not(:last-child){
+            margin-bottom: 2.5rem;
+        }
+
+        &__type{
+            h3{
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+            p{
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: $color-gray;
+            }
+        }
+
+        &__quantity{
+            display: flex;
+            align-items: center;
+
+            @include numberToTextAppearence;
+
+            @include numberFieldStyle;
+            input[name="adult"]{
+                color:$color-black;
+            }
+
+            button{
+                border: .1rem solid $color-gray;
+                outline: none;
+                background-color: $color-white;
+                width: 2rem;
+                height: 2rem;
+
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $color-gray;
+            }
+        }
+    }
+
+    &__sum{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        line-height: 2.5rem;
+
+        padding-right: 3rem;
+        padding-left: 1rem;
+        border-top: .2rem solid $color-orange;
+        margin-bottom: 2rem;
+
+        h3, label{
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        @include numberToTextAppearence;
+
+        @include numberFieldStyle;
+        input{
+            color: $color-black;
+            max-width: 3rem;
+            height: 2rem;
+        }
+    }
+}
