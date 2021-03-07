@@ -6,7 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
 </head>
 
 <body>
@@ -14,7 +17,7 @@
 
         <header class="header" id="header">
             <h1 class="header__title">The Art Museum</h1>
-            <h2 class="header__page-name" id="page-name">Plan your visit</h2>
+            <h2 class="header__page-name" id="page-name">Collections</h2>
             <div class="hamburger" id="hamburgerBtn">
                 <button onclick="navFloatIn(), hamburgerBtn()" class="hamburger__btn">
                     <span class="hamburger__icon">&nbsp;</span>
@@ -31,166 +34,158 @@
             <div class="content__group">
                 <div class="content__head">
                     <div class="content__head__title">
-                        <h2>Skip the Line.</h2>
-                        <h2>Purchase Tickets.</h2>
-                        <p>All exhibitions, audio tours, and films included in the price of admission.</p>
+                        <h2>Take a look at the Collections</h2>
+                        <p>Browse among the beautiful works of art of the Art Museum!</p>
                     </div>
+                    <form class="content__search">
+                        <input type="search" class="content__searchbar" placeholder="Explore the Collection">
+                        <button class="btn--small content__search__btn">
+                            <svg class="icon icon--content">
+                                <use xlink:href="img/sprite2.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <p><a href="#">Advanced search</a></p>
                 </div>
 
                 <div class="content__mid">
+                    <div class="collection">
 
-                    <div class="date">
-                        <div class="date__days">
-                            <span>
-                                <h3>Today</h3>
-                            </span>
-                            <span class="active">
-                                <h3>Tomorrow</h3>
-                            </span>
-                            <span>
-                                <h3>Other</h3>
-                            </span>
-                        </div>
-                        <div class="date__details">
-                            <p>March 22, 2021</p>
-                            <p>Open 10:30am-5:30pm</p>
-                        </div>
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-1.png" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Decorative arts & crafts</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-2.png" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">American impressionism</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-3.png" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">De stijl</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-4.png" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Cubism</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-5.png" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">American</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-6.png" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Greek antiquities</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-7.jpg" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Expressionism and Fauvism</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-8.jpg" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Photorealism</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-9.jpg" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Art Deco</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-10.jpg" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Egyptian Arts</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-11.jpg" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Surrealism</figcaption>
+                            </a>
+                        </figure>
+
+                        <figure class="collection__item">
+                            <a href="#" class="collection__item__link">
+                                <img src="img/coll-12.jpg" alt="" class="collection__item__image">
+                                <figcaption class="collection__caption">Pop Art</figcaption>
+                            </a>
+                        </figure>
+
                     </div>
-
-                    <form action="" method="GET" class="ticket">
-
-                        <div class="ticket__group">
-                            <div class="ticket__group__type">
-                                <h3>Adults</h3>
-                            </div>
-
-                            <div class="ticket__group__quantity">
-                                <button type="button"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                    -</button>
-                                <input id="adult" type="number" min="0" name="adult" value="2">
-                                <button type="button"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp();">+</button>
-                            </div>
-                        </div>
-
-                        <div class="ticket__group">
-                            <div class="ticket__group__type">
-                                <h3>Seniors</h3>
-                                <p>65+ with ID</p>
-                            </div>
-
-                            <div class="ticket__group__quantity">
-                                <button type="button"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                    -</button>
-                                <input id="senior" type="number" min="0" name="senior" value="0">
-                                <button type="button"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp();">+</button>
-                            </div>
-                        </div>
-
-                        <div class="ticket__group">
-                            <div class="ticket__group__type">
-                                <h3>Students</h3>
-                                <p>with ID</p>
-                            </div>
-
-                            <div class="ticket__group__quantity">
-                                <button type="button"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                    -</button>
-                                <input id="student" type="number" min="0" name="student" value="0">
-                                <button type="button"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp();">+</button>
-                            </div>
-                        </div>
-
-                        <div class="ticket__sum">
-                            <h3>Total</h3>
-                            <label for="total">$<input type="number" min="0" name="total" value="16"></label>
-                        </div>
-
-                        <button class="btn--large">Continue to payment</button>
-                    </form>
                 </div>
             </div>
 
-            <div class=" content__side">
-                <div class="infobox">
-                    <div class="calendar">
-                        <div class="calendar__month">
-                            <span class="calendar__arrow">&lsaquo;</span>
-                            <span>
-                                <h4>March</h4>
-                                <h5>2021</h5>
-                            </span>
-                            <span class="calendar__arrow">&rsaquo;</span>
-                        </div>
-                        <ul class="calendar__weekdays">
-                            <li>Mo</li>
-                            <li>Tu</li>
-                            <li>We</li>
-                            <li>Th</li>
-                            <li>Fr</li>
-                            <li>Sa</li>
-                            <li>Su</li>
-                        </ul>
-                        <ul class="calendar__days">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
-                            <li>19</li>
-                            <li>20</li>
-                            <li>21</li>
-                            <li class="active">22</li>
-                            <li>23</li>
-                            <li>24</li>
-                            <li>25</li>
-                            <li>26</li>
-                            <li>27</li>
-                            <li>28</li>
-                            <li>29</li>
-                            <li>30</li>
-                            <li>31</li>
-                        </ul>
+            <div class="content__side">
+                <div class="about">
+                    <h2>About the Collections</h2>
+                    <span>Learn more about the styles of the collections.</span>
+
+                    <div class="about__item">
+                        <h3>Decorative arts & crafts</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nobis nihil hic labore magnam
+                            exercitationem tempora veritatis...</p>
+                        <a href="#">Learn more</a>
                     </div>
 
-                    <h3>Important information</h3>
-                    <p>Every museum visitor must be able to show a valid admission ticket. This also
-                        applies to your
-                        baby,
-                        your companion or if you have free entrance.</p>
+                    <div class="about__item">
+                        <h3>American Impressionism</h3>
+                        <p>Molestias fugit at magni, velit vitae minima provident...</p>
+                        <a href="#">Learn more</a>
+                    </div>
 
-                    <p>Always bring your (valid) discount pass to the museum. Without a scan of this
-                        pass, your
-                        discounted
-                        ticket will not be valid. If you are under 18 years old, you may be asked to
-                        provide
-                        identification.</p>
+                    <div class="about__item">
+                        <h3>De Stijl</h3>
+                        <p>Nam id eros efficitur, dignissim turpis non, semper sapien. Phasellus eget risus congue,
+                            commodo nunc in, fringilla risus....</p>
+                        <a href="#">Learn more</a>
+                    </div>
 
-                    <p><b>Questions?</b></p>
+                    <div class="about__item">
+                        <h3>Cubism</h3>
+                        <p>Nam vitae iaculis massa. Morbi eget varius purus. Mauris eu dapibus mi. Nunc malesuada...</p>
+                        <a href="#">Learn more</a>
+                    </div>
 
-                    <p>Do you have questions about your ticket? Please contact support@museumapp.com
-                    </p>
+                    <div class="about__item">
+                        <h3>American</h3>
+                        <p>Maecenas vel maximus lectus. Suspendisse sit amet lacus nisl. Vestibulum sollicitudin id mi
+                            sit amet posuere....</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div class="about__item">
+                        <h3>Greek Antiquities</h3>
+                        <p>Nulla feugiat leo purus, sit amet pretium erat pharetra eget. Aenean gravida nisi odio...</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <button class="btn--inline">Show all <span>&rarr;</span></button>
                 </div>
             </div>
-
+            <!-- <div id="includedContent"></div> -->
         </div>
 
         <footer class="footer">
