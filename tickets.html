@@ -68,7 +68,7 @@
                                 <button type="button"
                                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                                     -</button>
-                                <input id="adult" type="number" min="0" name="adult" value="2">
+                                <input id="adult" type="number" min="0" max="10" name="adult" value="2">
                                 <button type="button"
                                     onclick="this.parentNode.querySelector('input[type=number]').stepUp();">+</button>
                             </div>
@@ -108,7 +108,7 @@
 
                         <div class="ticket__sum">
                             <h3>Total</h3>
-                            <label for="total">$<input type="number" min="0" max="10" name="total" value="16"></label>
+                            <label for="total">$<input type="number" min="0" name="total" value="16"></label>
                         </div>
 
                         <button class="btn--large">Continue to payment</button>
